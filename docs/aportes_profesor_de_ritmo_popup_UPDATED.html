@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aporta a la Misión Musical</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #001f3f;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+    .popup {
+      display: none;
+      position: fixed;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -20%);
+      background: #003366;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px #0074D9;
+      z-index: 1000;
+    }
+    .popup img {
+      max-width: 200px;
+      margin: 10px 0;
+    }
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 999;
+    }
+    button {
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      color: white;
+      padding: 12px 24px;
+      font-size: 1em;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎁 Aporta a la Misión Musical</h1>
+  <p>Ayuda a que esta IA llegue a quienes no tienen acceso a clases formales.</p>
+  <button onclick="mostrarPopup()">Aporta Ahora</button>
+
+  <div class="overlay" id="fondoOscuro" onclick="cerrarPopup()"></div>
+  <div class="popup" id="popupAporte">
+    <h2>Dirección Wallet Polygon:</h2>
+    <p style="word-break: break-all;">0x2a0EeC585528C3FF59f957ca78acF3270163a6E8</p>
+    <img src="wallet_qr_polygon_profesor_de_ritmo_NEW.png" alt="QR Wallet" />
+    <p>Gracias por apoyar la educación musical sin barreras. 🙏</p>
+    <button onclick="cerrarPopup()">Cerrar</button>
+  </div>
+
+  <script>
+    function mostrarPopup() {
+      document.getElementById("popupAporte").style.display = "block";
+      document.getElementById("fondoOscuro").style.display = "block";
+    }
+    function cerrarPopup() {
+      document.getElementById("popupAporte").style.display = "none";
+      document.getElementById("fondoOscuro").style.display = "none";
+    }
+  </script>
+</body>
+</html>
