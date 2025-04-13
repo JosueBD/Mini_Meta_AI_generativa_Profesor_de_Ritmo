@@ -1,0 +1,13 @@
+# Requisitos para backend del Profesor de Ritmo
+music21
+pretty_midi
+pydub
+librosa
+fastapi
+uvicorn
+flask
+mingus
+mido
+ffmpeg-python
+gTTS
+openai
