@@ -53,3 +53,4 @@ Este archivo documenta todas las librerías y APIs registradas oficialmente como
 | ElevenLabs API   | Generar voz realista desde texto                 | API externa  |
 | OpenAI (GPT)     | Generar texto, ejercicios, ideas musicales       | API externa  |
 | gTTS             | Texto a voz básico                               | Python       |
+
